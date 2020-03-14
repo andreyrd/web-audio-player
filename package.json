@@ -34,7 +34,8 @@
     "test": "standard",
     "start": "budo demo/index.js:bundle.js --live",
     "simple": "budo demo/simple.js:bundle.js --live",
-    "build": "browserify demo/index.js | uglifyjs -cm > bundle.js"
+    "build": "browserify -o web-audio-player-1.3.3.js browser.js && uglifyjs -cm -o web-audio-player-1.3.3.min.js web-audio-player-1.3.3.js",
+    "build-debug": "browserify --debug -o web-audio-player-1.3.3.js browser.js"
   },
   "keywords": [
     "audio",
