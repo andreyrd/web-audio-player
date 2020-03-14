@@ -2,6 +2,9 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
+## Fork
+Since the original at https://github.com/Jam3/web-audio-player seems to be abandoned, this attempts to pick things back up, and implements important features for the buffer-based player such as `currentTime` and `ondurationchange`, and provides a way to build for browser builds you can use without a bundler.
+
 [(demo)](http://jam3.github.io/web-audio-player/)
 
 A simplified cross-browser WebAudio wrapper with a narrow API. This repo also attempts to report and solve some ["WebAudio Gotchas"](#webaudio-gotchas) for getting WebAudio working on mobile. It targets new browsers and devices, and does not attempt to provide a non-WebAudio fallback.
